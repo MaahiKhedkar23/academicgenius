@@ -21,7 +21,7 @@ const SuggestLearningResourcesOutputSchema = z.object({
   resources: z.array(
     z.object({
       title: z.string().describe('The title of the learning resource.'),
-      url: z.string().url().describe('The URL of the learning resource.'),
+      url: z.string().describe('The URL of the learning resource.'),
       type: z.string().describe('The type of learning resource (e.g., article, video, book).'),
       reason: z.string().describe('Why this resource is helpful for the given task and subject'),
     })
